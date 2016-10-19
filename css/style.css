@@ -1,0 +1,124 @@
+body {
+  display: table;
+  min-width: 320px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  color: #5798b4;
+  background-color: #ffffe1;
+}
+
+p,
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.block {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapper {
+  position: relative;
+  width: 236px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 235px;
+  height: 276px;
+  background-color: #cc0000;
+  border-radius: 13px;
+  z-index: 0;
+}
+
+.post {
+  position: relative;
+  width: 236px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #cc0000;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.note::post {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  right: -17px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #cc0000;
+  clip: rect(auto, 16px, 16px, auto);
+}
+
+.title {
+  position: relative;
+}
+
+.title-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.title-img {
+  position: absolute;
+  right: -10px;
+  top: -9px;
+}
+
+.description {
+  text-indent: 20px;
+}
+
+.link {
+  position: relative;
+  color: #cc0000;
+}
+
+.icon-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 16px;
+  background-image: url(" data:image/svg+xml,%3Csvg%20fill%3D%22%23cc0000%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M14%2016V5l-1%201v9H1V3h9l1-1H0v14z%22%2F%3E%3Cpath%20d%3D%22M16%200h-5l1.8%201.8L6%208.6%207.4%2010l6.8-6.8L16%205z%22%2F%3E%3C%2Fsvg%3E%0D%0A");
+  background-repeat: no-repeat;
+}
+
+.icon-link::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+  width: 12px;
+  height: 1px;
+  background-color: #cc0000;
+}
+
+.cite-img {
+  float: left;
+  margin-right: 5px;
+}
+
+.text-underline {
+  border-bottom: 1px dashed #5798b4;
+}
