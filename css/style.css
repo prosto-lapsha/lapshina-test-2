@@ -35,8 +35,8 @@ h1 {
   position: absolute;
   left: 20px;
   top: 20px;
-  width: 235px;
-  height: 276px;
+  width: 100%;
+  height: 100%;
   background-color: #cc0000;
   border-radius: 13px;
   z-index: 0;
@@ -44,7 +44,6 @@ h1 {
 
 .post {
   position: relative;
-  width: 236px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 15px;
@@ -71,10 +70,12 @@ h1 {
 
 .title {
   position: relative;
+
 }
 
 .title-text {
   font-size: 16px;
+  padding-right: 25px;
   line-height: 18px;
   color: #cc0000;
   font-weight: bold;
@@ -92,6 +93,7 @@ h1 {
 
 .link {
   position: relative;
+  white-space: nowrap;
   color: #cc0000;
 }
 
